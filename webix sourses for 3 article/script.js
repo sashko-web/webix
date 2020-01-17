@@ -1,5 +1,6 @@
 webix.ui({
     css:"webix_dark",
+    template:"layout",
     rows:[
         { 
             view:"toolbar",
@@ -7,7 +8,7 @@ webix.ui({
             cols:[
                 { view:"label", label:"My app", autowidth:true},
                 {},
-                { id:"profile_btn", height: 40, type:"icon", icon:"wxi-user",  view:"button", label:"Profile", width:100, css:"webix_transparent tool_rigth", click:profilePopup}
+                { id:"profile_btn", height: 40, type:"icon", icon:"wxi-user",  view:"button", label:"Profile", width:100, css:"webix_transparent tool_rigth"}
             ]
         },
         {cols:[
@@ -21,10 +22,10 @@ webix.ui({
                     width:200,
                     css:'list_color',
                     data:[
-                        {value:'Dashboard', id:'test'},
-                        {value:'Users'},
-                        {value:'Products'},
-                        {value:'Location'}
+                        {value:'Dashboard', id:'dashboard'},
+                        {value:'Users', id:'users'},
+                        {value:'Products', id:'products'},
+                        {value:'Location', id:'location'}
                     ]
                 },
                     {css:'list_color', type:"icon", icon:"wxi-check",width:150, view:"button", label:'Connected'},
@@ -78,29 +79,3 @@ webix.ui({
     ]
 });
 
-
-
-webix.ui({
-    view:"popup",
-    id:"mypopup",
-    height:74,
-    move:true,
-    body:{
-        rows:[
-            { 
-                view: "list",
-                scroll:false,
-                id:'list_profile',
-                select:true,
-                width:300,
-                data:[
-                    {value:'Settings'},
-                    {value:'Log out'}
-                ]
-            }
-        ]
-    }
-});
-function profilePopup(){
-    $$("mypopup").show($$("profile_btn").getNode());
-};
