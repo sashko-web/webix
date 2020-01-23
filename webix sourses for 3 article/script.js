@@ -24,8 +24,7 @@ webix.ui({
                     data:[
                         {value:'Dashboard', id:'dashboard'},
                         {value:'Users', id:'users'},
-                        {value:'Products', id:'products'},
-                        {value:'Location', id:'location'}
+                        {value:'Products', id:'products'}
                     ]
                 },
                     {css:'list_color', type:"icon", icon:"wxi-check",width:150, view:"button", label:'Connected'},
