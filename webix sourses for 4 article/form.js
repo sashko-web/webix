@@ -1,6 +1,6 @@
 const form = {
     view:"form", 
-    id:'film_form', 
+    id:"film_form", 
     width: 350,
     elements:[
         { type:"section", template:"EDIT FILMS"},

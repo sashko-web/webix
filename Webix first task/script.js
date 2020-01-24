@@ -1,6 +1,5 @@
 
 webix.ui({
-    css:"webix_dark",
     rows:[
         {
             view:"toolbar",
@@ -14,16 +13,16 @@ webix.ui({
         {cols:[
             {
                 view: "list",
-                id:'mylist',
+                id:"mylist",
                 scroll:false,
                 select:true,
                 width:200,
-                css:'list_color',
+                css:"list_color",
                 data:[
-                    {value:'Dashboard',},
-                    {value:'Users'},
-                    {value:'Products'},
-                    {value:'Location'}
+                    {value:"Dashboard"},
+                    {value:"Users"},
+                    {value:"Products"},
+                    {value:"Location"}
                 ]
             },
             {view: "resizer"},
@@ -35,7 +34,7 @@ webix.ui({
                 data:small_film_set
             },
             {
-                view:"form", id:'film_form', width: 350,
+                view:"form", id:"film_form", width: 350,
                 elements:[
                     { type:"section", template:"EDIT FILMS"},
                     { view:"text", name:"title", label:"Title" },

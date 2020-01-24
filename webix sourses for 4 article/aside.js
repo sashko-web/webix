@@ -1,15 +1,15 @@
 const aside = {
     
     view: "list",
-    id:'mylist',
+    id:"mylist",
     scroll:false,
     select:true,
     width:200,
-    css:'list_color',
+    css:"list_color",
     data:[
-        {value:'Dashboard', id:"dashboard"},
-        {value:'Users', id:"users"},
-        {value:'Products', id:"products"}
+        {value:"Dashboard", id:"dashboard"},
+        {value:"Users", id:"users"},
+        {value:"Products", id:"products"}
     ],
     on:{
         onAfterSelect:function(id){ 
@@ -21,8 +21,8 @@ const aside = {
 const multi = {
     view: "multiview",
     cells:[
-        { id:'dashboard', cols:[table, form ] },
-        { id:'users', rows:[users] },
-        { id:'products', rows:[products] }
+        { id:"dashboard", cols:[table, form ] },
+        { id:"users", rows:[users] },
+        { id:"products", rows:[products] }
     ]   
 }

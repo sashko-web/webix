@@ -1,6 +1,4 @@
 webix.ui({
-    css:"webix_dark",
-    template:"layout",
     rows:[
         { 
             view:"toolbar",
@@ -16,18 +14,18 @@ webix.ui({
                 rows:[
                     { 
                     view: "list",
-                    id:'mylist',
+                    id:"mylist",
                     scroll:false,
                     select:true,
                     width:200,
-                    css:'list_color',
+                    css:"list_color",
                     data:[
-                        {value:'Dashboard', id:'dashboard'},
-                        {value:'Users', id:'users'},
-                        {value:'Products', id:'products'}
+                        {value:"Dashboard", id:"dashboard"},
+                        {value:"Users", id:"users"},
+                        {value:"Products", id:"products"}
                     ]
                 },
-                    {css:'list_color', type:"icon", icon:"wxi-check",width:150, view:"button", label:'Connected'},
+                    {css:"list_color", type:"icon", icon:"wxi-check",width:150, view:"button", label:"Connected"},
                 ]
 
                 },
@@ -39,7 +37,7 @@ webix.ui({
                 data:small_film_set
             },
             {
-                view:"form", id:'film_form', width: 350,
+                view:"form", id:"film_form", width: 350,
 
                 elements:[
                     { type:"section", template:"EDIT FILMS"},
@@ -74,7 +72,7 @@ webix.ui({
             }
         ]},
         
-        {position:"center",height: 30, template:"The software is provided by <a href='#'>webix.com</a>. All rights reserved (c)", css:'bottom-link'}
+        {position:"center",height: 30, template:"The software is provided by <a href='#'>webix.com</a>. All rights reserved (c)", css:"bottom-link"}
     ]
 });
 

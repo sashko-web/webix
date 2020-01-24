@@ -1,6 +1,5 @@
 
 webix.ui({
-    css:"webix_dark",
     rows:[
         header,
         {
