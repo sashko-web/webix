@@ -12,7 +12,7 @@ const aside = {
         {value:"Products", id:"products"}
     ],
     on:{
-        onAfterSelect:function(id){ 
+        onAfterSelect(id){ 
             $$(id).show();
         }
     }

@@ -56,23 +56,26 @@ webix.ui({
                 ],
                 rules:{
                     title: webix.rules.isNotEmpty,
-                    rating:function(value){
-                        if(webix.rules.isNumber(value)!=0){
+                    rating(value){
+                        if(webix.rules.isNumber(value)){
                             return true;
                         }
                     },
-                    votes: function(value){
-                        return webix.rules.isNumber(value) < 1000000 && 
-                        webix.rules.isNumber(value) >= 1;
+                    votes(value){
+                       return value < 1000000 && value >= 1;
                     },
-                    year: function(value){
-                        return value>=1970 && value <= new Date();
+                    year(value){
+                        return value>=1970 && value <= new Date().getFullYear();
                     }
                 }
             }
         ]},
         
-        {height: 30, template:"The software is provided by <a href='#'>webix.com</a>. All rights reserved (c)", css:"bottom-link"}
+        {
+            height: 30, 
+            template:"The software is provided by <a href='#'>webix.com</a>. All rights reserved (c)", 
+            css:"bottom-link"
+        }
     ]
 });
 
