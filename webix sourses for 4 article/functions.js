@@ -9,7 +9,7 @@ let clearForm = () => {
         }
 )};
 
-let addItem = () => {
+let saveItem = () => {
     let form = $$( "film_form" );  
     let list = $$( "film_list" );  
     let item_data = $$("film_form").getValues();    

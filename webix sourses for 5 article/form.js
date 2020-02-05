@@ -10,7 +10,7 @@ const form = {
         { view:"text", name:"votes", label:"Votes", invalidMessage:"Must be less than 100000" }, 
         {
             margin:10, cols:[
-                { view:"button", id:"btn_save", value:"Save",  click:saveItem},
+                { view:"button", id:"btn_save", value:"Save",click:saveItem},
                 { view:"button", id:"btn_clear", value:"Clear", click:clearForm}
                 
             ]
