@@ -12,10 +12,10 @@ const table = {
         { id:"year",  header:"Released", width:100},
         { id:"votes", header:"Votes", width:100},
         { id:"rating", header:"Rating", width:100},
-        { header:"", template:"<span class='webix_icon wxi-close'></span>", width:35}
+        { header:"", template:"<span class='webix_icon wxi-close delete_icon'></span>", width:35}
     ],
     onClick:{
-    webix_icon(e, id){
+        delete_icon(e, id){
         this.remove(id);
         return false;
         }

@@ -14,5 +14,4 @@ webix.ui({
 
 // $$("mylist").select("users");
 
-$$("chart").sync($$("user_list"));
 

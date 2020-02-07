@@ -15,7 +15,7 @@ let saveItem = () => {
     let form = $$( "film_form" );  
     let list = $$( "film_list" );  
     let item_data = $$("film_form").getValues();    
-    if( form.validate() && form.validate() ){
+    if( form.isDirty() && form.validate() ){
         if( item_data.id ) 
             list.updateItem(item_data.id, item_data);
         else 
@@ -25,10 +25,12 @@ let saveItem = () => {
 
 
 let addPerson = () => {
-    $$("user_list").add({
+    let obj = {
         name:"Some name",
         age:Math.floor(Math.random() * 80) + 10, 
         country:"Some country"
-    });
+    }
+    $$("user_list").add(obj);
+    $$("chart").add(obj);
 };
 

@@ -21,9 +21,9 @@ const users = {
             id:"user_list",
             select:true,
             url:"data/users.js",
-            template:"#name# from #country# <span class='webix_icon wxi-close'></span> ",
+            template:"#name# from #country# <span class='webix_icon wxi-close delete_icon'></span> ",
             onClick:{
-                webix_icon(e, id){
+                delete_icon(e, id){
                     this.remove(id);
                     return false;
                 }
@@ -34,6 +34,7 @@ const users = {
             id:"chart",
             type:"bar",
             value:"#age#",
+            url:"data/users.js",
             xAxis:{
                 template:"#age#",
                 title:"Countries"
